@@ -1,5 +1,27 @@
 name: Build
-on: push
+
+on:
+  push:
+  workflow_dispatch:  # 添加 workflow_dispatch 触发器
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'info'
+        type: choice
+        options:
+          - info
+          - warning
+          - debug
+      tags:
+        description: 'Tags'
+        required: false
+        type: boolean
+      environment:
+        description: 'Environment to deploy to'
+        type: environment
+        required: true
+
 permissions: write-all
 
 jobs:
