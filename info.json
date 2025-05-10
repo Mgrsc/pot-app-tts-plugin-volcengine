@@ -1,0 +1,76 @@
+{
+  "id": "plugin.com.mgrsc.volcengine_tts",
+  "plugin_type": "tts",
+  "icon": "volcengine-color.svg",
+  "display": "火山引擎 TTS",
+  "homepage": "https://github.com/mgrsc/pot-app-tts-plugin-volcengine",
+  "needs": [
+    {
+      "key": "appId",
+      "display": "AppID",
+      "type": "input"
+    },
+    {
+      "key": "token",
+      "display": "Access Token",
+      "type": "input"
+    },
+    {
+      "key": "voiceType",
+      "display": "音色类型",
+      "type": "input"
+    },
+    {
+      "key": "emotion",
+      "display": "音色情感",
+      "type": "select",
+      "options": {
+        "none": "无",
+        "angry": "生气",
+        "happy": "开心",
+        "sad": "悲伤"
+      }
+    },
+    {
+      "key": "emotionScale",
+      "display": "情绪强度",
+      "type": "select",
+      "options": {
+        "1": 1.0,
+        "2": 2.0,
+        "3": 3.0,
+        "4": 4.0,
+        "5": 5.0
+      }
+    },
+    {
+      "key": "speedRatio",
+      "display": "语速",
+      "type": "select",
+      "options": {
+        "0.8": 0.8,
+        "0.9": 0.9,
+        "1.0": 1.0,
+        "1.2": 1.2,
+        "1.5": 1.5,
+        "2.0": 2.0
+      }
+    }
+  ],
+  "language": {
+    "zh_cn": "zh",
+    "zh_tw": "zh",
+    "en": "en",
+    "ja": "jp",
+    "ko": "ko",
+    "fr": "fr",
+    "es": "es",
+    "ru": "ru",
+    "de": "de",
+    "it": "it",
+    "tr": "tr",
+    "pt_pt": "pt",
+    "pt_br": "pt",
+    "vi": "vi"
+  }
+}
